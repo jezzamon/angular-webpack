@@ -4,10 +4,9 @@ import { RestService } from '../../services/rest.service';
 import { FormData, Question } from '../../models';
 
 @Component({
-    moduleId: module.id,
+
     selector: 'new-app',
-    templateUrl: 'app.component.html'/*,
-    styleUrls: []*/
+    template: require('./app.component.html')
 })
 export class AppComponent {
     forms: FormData[] = null;
