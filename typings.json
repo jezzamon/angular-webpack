@@ -1,11 +1,12 @@
 {
   "name": "ng2-webpack-test",
   "dependencies": {
-    "es6-promise": "registry:npm/es6-promise#3.0.0+20160211003958"
+    "es6-promise": "registry:common/es6-promise#4.0.0+20161003185919"
   },
   "globalDependencies": {
-    "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
-    "node": "registry:env/node#6.0.0+20160622202520"
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160726072212",
+    "jasmine": "registry:dt/jasmine#2.5.0+20170207112528",
+    "jquery": "registry:dt/jquery#1.10.0+20170123093700",
+    "node": "registry:env/node#6.0.0+20170213133316"
   }
 }

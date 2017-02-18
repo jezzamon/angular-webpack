@@ -1,13 +1,12 @@
 {
   "resolution": "main",
   "tree": {
-    "src": "https://raw.githubusercontent.com/typed-typings/env-node/5bf6a25f4e44dfd64065ce4663dce5f3b4b77ba8/6/typings.json",
-    "raw": "registry:env/node#6.0.0+20160622202520",
+    "src": "https://raw.githubusercontent.com/types/env-node/a5f9e16f769422e801156d494c45453670fc73cc/6.0/typings.json",
+    "raw": "registry:env/node#6.0.0+20170213133316",
     "version": "6",
     "files": [
       "node.d.ts"
     ],
-    "global": false,
     "name": "node",
     "type": "typings"
   }
