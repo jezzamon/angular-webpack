@@ -1,25 +1,22 @@
 import { Component } from '@angular/core';
 
-import { FormService } from '../../services/form.service';
 import { RestService } from '../../services/rest.service';
 import { FormData, Question } from '../../models';
 
 @Component({
-    selector: 'dynamic-form-app',
-    template: require('./app.component.html')
+    moduleId: module.id,
+    selector: 'new-app',
+    templateUrl: 'app.component.html'/*,
+    styleUrls: []*/
 })
 export class AppComponent {
     forms: FormData[] = null;
-    selectedForm: FormData = null;
 
-    constructor(private formService: FormService, private restService: RestService) {
+
+    constructor(private restService: RestService) {
         restService.getForms().subscribe((forms: FormData[]) => {
-            this.formService.setForms(forms);
-            this.forms = this.formService.getAllForms();
-        });
-    }
+          this.forms = forms;
 
-    selectForm(formId: number) {
-        this.selectedForm = this.formService.getForm(formId);
+        });
     }
 }
