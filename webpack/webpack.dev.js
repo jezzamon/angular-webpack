@@ -20,16 +20,11 @@ module.exports = {
   },
   module: {
     exprContextCritical: false, // @Simon-Briggs https://github.com/AngularClass/angular2-webpack-starter/issues/993
-    rules: [
-      {
-        test: /\.html$/,
+    rules: [{
+        test: /\.(css|html)$/,
         use: [{
-          loader: 'html-loader'
+          loader: 'raw-loader'
         }, ]
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'null-loader'
       },
       {
         enforce: 'pre',
@@ -39,18 +34,10 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loaders: ['ts-loader', 'angular2-template-loader'],
-
-      },
-      {
-        test: /\.css$/,
-        exclude: path.resolve(rootDir,'src', 'components'),
-        loader: 'null-loader'
-      },
-      {
-        test: /\.css$/,
-        include: path.resolve(rootDir, 'src', 'components'),
-        loader: 'raw-loader'
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: true
+        }
       }
     ]
   },
