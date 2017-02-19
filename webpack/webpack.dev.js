@@ -20,7 +20,8 @@ module.exports = {
   },
   module: {
     exprContextCritical: false, // @Simon-Briggs https://github.com/AngularClass/angular2-webpack-starter/issues/993
-    rules: [{
+    rules: [
+			{
         test: /\.(css|html)$/,
         use: [{
           loader: 'raw-loader'
@@ -29,7 +30,9 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.tsx?$/,
-        use: "source-map-loader"
+        use: [
+					"source-map-loader",
+					"tslint-loader"]
       },
       {
         test: /\.ts$/,
