@@ -30,8 +30,12 @@
     "zone.js": "0.6.25"
   },
   "devDependencies": {
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.0.4",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "2.22.0",
     "jasmine-core": "2.4.1",
+    "null-loader": "^0.1.1",
     "raw-loader": "0.5.1",
     "source-map-loader": "^0.1.6",
     "ts-loader": "0.8.2",
